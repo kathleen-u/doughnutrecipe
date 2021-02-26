@@ -1,0 +1,231 @@
+body {
+  background-color:#fff6e8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  postion: relative;
+  text-decoration: none;
+  color: #47000b
+}
+
+a:hover {
+  color: #f9b384;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Red Hat Text';
+  font-size: 65pt;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  position: absolute;
+  width: 1027px;
+  height: 229px;
+  left: 120px;
+  top: 275px;
+  word-break: normal;
+  hyphens: auto;
+  margin: 0;
+  color: #c43d14;
+}
+
+h2 {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  letter-spacing:0.1em;
+  font-weight: 500;
+  font-size: 10pt;
+  line-height: 18pt;
+  position: relative;
+  top: 20px;
+  word-break: normal;
+  hyphens: auto;
+  margin: 0;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16pt;
+  line-height: 18pt;
+  position: relative;
+  word-break: normal;
+  hyphens: auto;
+  margin: 0;
+  color: #ca5116;
+}
+
+h4 {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24pt;
+  line-height: 30pt;
+  position: relative;
+  word-break: normal;
+  hyphens: auto;
+  margin: 0;
+  color: #3f2b2b;
+}
+
+h5 {
+  font-family: Nunito;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  position: relative;
+  color: #3f2b2b;
+  width: 670px;
+  left: 100px;
+  top: 100px;
+  word-break: normal;
+  hyphens: auto;
+  margin: 0;
+}
+
+p {
+  font-family: Nunito;
+  font-size: 13pt;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #47000b;
+  position: relative;
+}
+
+hr {
+  border-top: 1px dotted;
+  color: #3f2b2b;
+}
+
+ul, li {
+  font-family: Nunito;
+  font-size: 13pt;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19pt;
+  letter-spacing: 0em;
+  padding-left: 0;
+  color: #3f000f;
+  list-style-type:none;
+}
+
+.box {
+  width: 30%;
+  text-align:center;
+  margin-right: 1em;
+}
+
+.circle{
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  background: #f9b384;
+  box-shadow: 5px 4px 16px rgba(0, 0, 0, 0.25);
+  position:relative;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px;
+  margin: 1em 2em;
+}
+
+.hero-text {
+  grid-column: span 12;
+  position: relative;
+  margin: 8vh;
+  padding: 255px 25px;
+  }
+
+.hero-image {
+  background-image: url("img/plaindonut.jpeg");
+  grid-column: span 12;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.details {
+  padding: 4vh;
+  background-color:#fff6e8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 27px;
+  grid-column: 5 / span 7;
+  overflow-x: hidden;
+
+}
+
+.ingredients {
+  grid-column: 1 / span 4;
+  float: left;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: 80px;
+}
+
+.instructions {
+  grid-column-start: 5;
+  grid-column-end: 13;
+  float: right;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-left: 2vh;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: 40px;
+}
+
+.gridcontainer {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: auto;
+}
+
+@media (max-width:1083px) {
+
+ .hero-image {
+    height: 30vh;
+  }
+
+  .hero-text {
+    height: 30vh;
+   }
+
+  .ingredients {
+  grid-column: 1 / span 5;
+}
+
+  .instructions {
+    min-width: 50vw;
+    grid-column: 1 / span 5;
+  }
+
+h1 {
+  top: 25px;
+  font-size: 24pt;
+}
+
+h5 {
+  top: -30vh;
+  font-size: 9pt;
+}
+
+  iframe {
+  position: relative;
+  width: 70vw;
+  }
+    }
